@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Isaran Suci Aryani | SMK Negeri Bojonggambir</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- 1. NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Brand / Nama -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center text-white font-bold text-lg">
+                        I
+                    </div>
+                    <span class="font-bold text-lg sm:text-xl text-slate-800 tracking-tight">Isaran Suci Aryani</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
+                    <a href="#hero" class="hover:text-emerald-600 transition-colors">Beranda</a>
+                    <a href="#keahlian" class="hover:text-emerald-600 transition-colors">Keahlian</a>
+                    <a href="#proyek" class="hover:text-emerald-600 transition-colors">Galeri Proyek</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-600 hover:text-emerald-600 hover:bg-slate-100 focus:outline-none">
+                        <i data-lucide="menu" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+            <a href="#hero" class="block py-2 text-slate-600 hover:text-emerald-600 rounded-md">Beranda</a>
+            <a href="#keahlian" class="block py-2 text-slate-600 hover:text-emerald-600 rounded-md">Keahlian</a>
+            <a href="#proyek" class="block py-2 text-slate-600 hover:text-emerald-600 rounded-md">Galeri Proyek</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+        
+        <!-- 2. HERO SECTION -->
+        <section id="hero" class="py-16 sm:py-24 bg-gradient-to-b from-emerald-50/50 to-slate-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="flex flex-col items-center">
+                    <!-- Foto Profil Bundar -->
+                    <div class="relative mb-6">
+                        <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden ring-4 ring-emerald-500/30 shadow-xl">
+                            <img src="https://i.postimg.cc/FKm4Mh2K/placeholder.jpg" alt="Isaran Suci Aryani" class="w-full h-full object-cover">
+                        </div>
+                        <span class="absolute bottom-2 right-2 bg-emerald-600 text-white p-2 rounded-full shadow-md" title="Siswa Aktif">
+                            <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+                        </span>
+                    </div>
+
+                    <!-- Badge Sekolah & Jurusan -->
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 mb-4">
+                        <i data-lucide="graduation-cap" class="w-3.5 h-3.5"></i> SMKN Bojonggambir • Jurusan APHP
+                    </span>
+
+                    <!-- Ucapan Halo & Nama -->
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+                        Halo, Saya <span class="text-emerald-600">Isaran Suci Aryani</span>
+                    </h1>
+
+                    <p class="max-w-2xl text-slate-600 text-base sm:text-lg mb-8 leading-relaxed">
+                        Siswa SMK Negeri Bojonggambir jurusan <span class="font-semibold text-slate-700">Agribisnis Pengolahan Hasil Pertanian (APHP)</span>. Berkomitmen dalam mengolah bahan pangan lokal menjadi produk berkualitas tinggi, aman, dan bernilai jual.
+                    </p>
+
+                    <!-- Tombol Lihat Karya -->
+                    <a href="#proyek" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-emerald-600 hover:bg-emerald-700 shadow-lg shadow-emerald-600/20 transition-all duration-200 gap-2 hover:-translate-y-0.5">
+                        Lihat Karya
+                        <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SKILL SECTION -->
+        <section id="keahlian" class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Keahlian Utama</h2>
+                    <p class="text-slate-500 mt-2 text-sm sm:text-base">Kompetensi yang saya pelajari di jurusan APHP SMKN Bojonggambir</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Skill 1 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-200 hover:shadow-md transition-all duration-200">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="flask-conical" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Pengolahan Hasil Nabati & Hewani</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Menguasai teknik pengolahan buah, sayur, serta bahan pangan mentah menjadi makanan olahan seperti selai, keripik, dan produk turunan lainnya.
+                        </p>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-200 hover:shadow-md transition-all duration-200">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Pengendalian Mutu Pangan (GMP/HACCP)</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Menerapkan standar sanitasi, higienitas pengolahan, serta pengujian mutu sederhana untuk memastikan keamanan produk pangan.
+                        </p>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-emerald-200 hover:shadow-md transition-all duration-200">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                            <i data-lucide="package-check" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Pengemasan & Kewirausahaan Pangan</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Memahami teknik pengemasan yang menarik, perhitungan Harga Pokok Produksi (HPP), dan strategi pemasaran produk pangan olahan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. GALERI PROYEK SECTION -->
+        <section id="proyek" class="py-16 bg-slate-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Galeri Proyek & Tugas</h2>
+                    <p class="text-slate-500 mt-2 text-sm sm:text-base">Dokumentasi hasil praktik dan produk olahan hasil pembelajaran di sekolah</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?auto=format&fit=crop&q=80&w=600" alt="Pembuatan Selai Buah" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md">Praktik Nabati</span>
+                                <h3 class="text-lg font-bold text-slate-900 mt-3 mb-2">Pembuatan Selai Buah Organik</h3>
+                                <p class="text-slate-600 text-sm">Proses pembuatan selai buah lokal dengan mengontrol kadar gula dan derajat keasaman (pH) agar tahan lama tanpa bahan pengawet sintesis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&q=80&w=600" alt="Keripik Buah & Sayur" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md">Pengolahan Hasil</span>
+                                <h3 class="text-lg font-bold text-slate-900 mt-3 mb-2">Produksi Keripik Sayur Renyah</h3>
+                                <p class="text-slate-600 text-sm">Praktik pengolahan hasil panen menjadi keripik renyah menggunakan teknik penggorengan yang tepat untuk mempertahankan gizi alami.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=600" alt="Pengemasan Produk Pangan" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md">Pengemasan & Labeling</span>
+                                <h3 class="text-lg font-bold text-slate-900 mt-3 mb-2">Desain Kemasan & Pengemasan Vacuum</h3>
+                                <p class="text-slate-600 text-sm">Penerapan teknologi pengemasan kedap udara (vacuum sealing) serta pembuatan desain label produk sesuai standar kelayakan pangan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 5. FOOTER -->
+    <footer class="bg-white border-t border-slate-200 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-sm">
+            <p>© 2026 Isaran Suci Aryani. All rights reserved.</p>
+            <p class="mt-1 text-xs text-slate-400">Agribisnis Pengolahan Hasil Pertanian (APHP) - SMK Negeri Bojonggambir</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Inisialisasi Lucide Icons
+        lucide.createIcons();
+
+        // Toggle Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close Mobile Menu saat link diklik
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
